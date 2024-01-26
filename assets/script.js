@@ -162,6 +162,7 @@ if (currentHour >= 9 && currentHour < 10) {
     document.getElementById('hour-5').className = "row time-block past";
   };
 
+  //function to save text from text area to local storage repeated for each text area
   const nineBtn = document.getElementById('btn-9');
   const nineText = document.getElementById("text-9");
 
