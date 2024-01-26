@@ -2,16 +2,70 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 const todayDate = document.querySelector('currentDay');
-// Create a new Date object
-const currentDate = new Date();
-// Get the current time
-const currentTime = currentDate.toLocaleTimeString();
-console.log(currentTime);
+const currentHour = new Date().getHours();
+console.log(currentHour);
 // Create a seperate Date object
 const onlyDate = new Date();
 onlyDate.setHours(0, 0, 0, 0); // Set the time to midnight
 const formattedDate = onlyDate.toLocaleDateString();
 console.log(formattedDate);//removes time from date
+document.getElementById("currentDay").innerHTML = formattedDate;//displays date on page
+
+// const nineAm = document.querySelector('hour-9');
+
+if (currentHour >= 9 && currentHour < 10) {
+    document.getElementById('hour-9').className = "row time-block present";
+  } else if (currentHour >= 10 && currentHour < 24) {
+    document.getElementById('hour-9').className = "row time-block past";
+  };
+
+  if (currentHour >= 10 && currentHour < 11) {
+    document.getElementById('hour-10').className = "row time-block present";
+  } else if (currentHour >= 11 && currentHour < 24) {
+    document.getElementById('hour-10').className = "row time-block past";
+  };
+
+  if (currentHour >= 11 && currentHour < 12) {
+    document.getElementById('hour-11').className = "row time-block present";
+  } else if (currentHour >= 12 && currentHour < 24) {
+    document.getElementById('hour-11').className = "row time-block past";
+  };
+
+  if (currentHour >= 12 && currentHour < 13) {
+    document.getElementById('hour-12').className = "row time-block present";
+  } else if (currentHour >= 13 && currentHour < 24) {
+    document.getElementById('hour-12').className = "row time-block past";
+  };
+
+  if (currentHour >= 13 && currentHour < 14) {
+    document.getElementById('hour-1').className = "row time-block present";
+  } else if (currentHour >= 14 && currentHour < 24) {
+    document.getElementById('hour-1').className = "row time-block past";
+  };
+
+  if (currentHour >= 14 && currentHour < 15) {
+    document.getElementById('hour-2').className = "row time-block present";
+  } else if (currentHour >= 15 && currentHour < 24) {
+    document.getElementById('hour-2').className = "row time-block past";
+  };
+
+  if (currentHour >= 15 && currentHour < 16) {
+    document.getElementById('hour-3').className = "row time-block present";
+  } else if (currentHour >= 16 && currentHour < 24) {
+    document.getElementById('hour-3').className = "row time-block past";
+  };
+
+  if (currentHour >= 16 && currentHour < 17) {
+    document.getElementById('hour-4').className = "row time-block present";
+  } else if (currentHour >= 17 && currentHour < 24) {
+    document.getElementById('hour-4').className = "row time-block past";
+  };
+
+  if (currentHour >= 17 && currentHour < 18) {
+    document.getElementById('hour-5').className = "row time-block present";
+  } else if (currentHour >= 18 && currentHour < 24) {
+    document.getElementById('hour-5').className = "row time-block past";
+  };
 
 
 
@@ -32,6 +86,4 @@ $(function () {
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
-    //
-    // TODO: Add code to display the current date in the header of the page.
   });
