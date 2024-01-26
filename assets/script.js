@@ -1,6 +1,20 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+const todayDate = document.querySelector('currentDay');
+// Create a new Date object
+const currentDate = new Date();
+// Get the current time
+const currentTime = currentDate.toLocaleTimeString();
+console.log(currentTime);
+// Create a seperate Date object
+const onlyDate = new Date();
+onlyDate.setHours(0, 0, 0, 0); // Set the time to midnight
+const formattedDate = onlyDate.toLocaleDateString();
+console.log(formattedDate);//removes time from date
+
+
+
 $(function () {
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
