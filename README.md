@@ -7,6 +7,6 @@ This calendar app is designed to help keep the typical work day organized. With 
 
 <br>
 <br>
-![Screenshot](https://github.com/RLCastaldy/DailyWorkCalendar/assets/140565239/9743380b-0ffe-49d8-8959-eac19ceb13b3)
+![Screenshot 2024-01-25 210108](https://github.com/RLCastaldy/DailyWorkCalendar/assets/140565239/3d6a7bec-9271-462b-8008-e0f229605ee3)
 <br>
 <br>
